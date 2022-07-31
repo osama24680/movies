@@ -1,13 +1,93 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  transition: 0.4s;
+
+}
+
+html {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.color_body {
+  height: 100vh;
+}
+
+.nav_style {
+  height: 90px;
+  width: 1440px;
+  background-color: #b45b43;
+
+}
+
+.logo {
+  height: 72px;
+  width: 140%;
+  background-blend-mode: multiply;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  height: 40px;
+  text-indent: 25px;
+  border-radius: 20px;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid red;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.card {
+  position: relative;
+  transition: all .5s ease-in;
+  cursor: pointer;
+  height: 375px;
+}
+
+.card_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color:#0000006b;
+  width: 100%;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: all 1s
+}
+.card_overlay:hover{
+  opacity:1;
 }
